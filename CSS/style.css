@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header  */
+header{
+    width: 100%;
+    height: 60px;
+    /* background-color: aquamarine; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding-left: 40px;
+}
+.logo i{
+    margin-right: 10px;
+}
+.logo span{
+    color: blue;
+}
+
+.search-notification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 300px);
+    padding: 0px 40px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(216, 231, 245);
+}
+.search button{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: rgb(209, 221, 221);
+    padding: 8px;
+}
+.search input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-indent: 15%;
+    width: 85%;
+}
+.notification{
+    display: flex;
+    
+}
+.icon{
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(188, 233, 233);
+}
+/* main  */
+.main{
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    /* background-color:blueviolet; */
+    transition: .5s;
+}
+/* sidebar  */
+.sidebar{
+    transition: .2s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 300px;
+    overflow: hidden;
+    background-color: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid white;
+    padding: 10px;
+}
+li{
+    list-style: none;
+}
+.sidebar-items a,
+.sidebar-bottom-items a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.sidebar-items a:hover,
+.sidebar-bottom-items a:hover{
+    background-color: rgb(138, 173, 201);
+    color: blue;
+    border-radius: 20px;
+}
+.dicon{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+
+}
+.dicon1{
+    color:cadetblue;
+}
+.dicon2{
+    color: palevioletred;
+}
+.dicon3{
+    color: blue;
+}
+.dicon4{
+    color: rgb(143, 59, 59);
+}
+.dicon5{
+    color: green;
+}
+.dicon6{
+    color: purple;
+}
+.dicon7{
+    color: gray;
+}
+.dicon8{
+    color: royalblue;
+}
+/* main-content  */
+.main-content{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: calc(100% - 300px);
+    /* background-color: rgb(171, 213, 230); */
+    padding: 0px 40px;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.dropdown{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(216, 231, 245);
+    width: 150px;
+    padding: 5px;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.card{
+    padding: 20px;
+    border-radius: 20px;
+    width: 230px;
+    height: auto;
+    /* background-color: rgb(121, 206, 163); */
+}
+.card-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.card-data i{
+    font-size: 80px;
+}
+.card1 {
+    /* color: rgb(228, 228, 166); */
+    background-color: rgb(236, 236, 175);
+}
+.card2{
+    background-color: rgb(192, 187, 228);
+}
+.card3{
+    background-color: rgb(224, 191, 167);
+}
+.card4{
+    background-color: rgb(233, 205, 219);
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.stats span{
+    display: flex;
+    align-items: center;
+}.stats i{
+    margin-right: 10px;
+}
+/* Doctors Section  */
+.right-btns{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.add{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(17, 17, 141);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add i{
+    /* background-color: aliceblue; */
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+
+}
+.img-box{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 2px solid rgb(150, 172, 192);
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+.doctors-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.doctor-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    padding: 10px 40px;
+    background-color: aliceblue;
+}
+.doctor-card:hover{
+    box-shadow: 0px 4px 2px gray;
+}
+.doctors-cards a{
+    color:blue;
+    text-decoration: none;
+}
+.free{
+    color: green;
+}
+/* Recent Patients  */
+.table{
+    height: 300px;
+    overflow-y: scroll;
+}
+table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 2px solid rgb(218, 213, 213);
+}
+th,td{
+    padding: 10px;
+}
+td i{
+    margin: 5px;
+}
+.pending{
+    color: darkgoldenrod;
+}
+.confirmed{
+    color: green;
+}
+.reject{
+    color: red;
+}
+/* Media quaries  */
+@media screen and (max-width: 1430px){
+    .cards,.doctors-cards{
+        overflow-x: scroll;
+    }
+}
+ /*javaScript*/
+ .disable{
+    width: 57px !important;
+ }
+ 
+ .enable{
+    position: absolute;
+    right: 0;
+    left: 60;
+    top: 0;
+    width: calc(100vw - 60px );
+ }
+ .Show{
+    display: flex;
+ }
