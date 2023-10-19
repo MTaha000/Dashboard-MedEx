@@ -1,0 +1,260 @@
+@media(max-width:950px){
+    .search{
+        width: 300px;
+    }
+.icon{
+    padding: 5px 10px;
+}
+    .sidebar{
+        width: 150px;
+    }
+    .sidebar-items a,
+.sidebar-bottom-items a{
+    font-size: 13px;
+}
+.main-content{
+   width: 85%;
+}
+.card{
+    width: 180px;
+    padding: 10px;
+}
+.card-data i{
+    font-size: 50px;
+}
+.card h1{
+    font-size: 20px;
+}
+.card h5{
+    font-size: 12px;
+}
+.dropdown{
+    width: 100px;
+}
+button{
+    font-size: 12px;
+}
+.enable{
+    position: absolute;
+    right: 0;
+    left: 45;
+    top: 0;
+    width: calc(100vw - 50px ) !important;
+ }
+ .disable{
+    width: 44px !important;
+ }
+}
+@media(max-width:800px){
+
+    .logo{
+        width: 200px;
+    }
+    .search{
+        width: 250px;
+        padding: 2px;
+    }
+    .search-notification{
+        width: calc(100% - 200px);
+        justify-content: space-around;
+    }
+    .sidebar{
+        width: 130px;
+    }
+    .sidebar-items a,
+.sidebar-bottom-items a{
+    font-size: 12px;
+}
+.dicon{
+    margin-right: 10px;
+    font-size: 15px;
+}
+    .main-content{
+        width: 80%;
+        padding: 0px 0px;
+     }
+     .img-box{
+        width: 50px;
+        height: 50px;
+     }
+     .doctor-card{
+        padding: 5px 10px;
+     }
+}
+@media(max-width:650px){
+    .logo{
+        width: 150px;
+    }
+    .search{
+        width: 200px;
+        padding: 0px;
+    }
+    .search button i{
+        font-size: 12px;
+    }
+    .search-notification{
+        width: calc(100% - 150px);
+        justify-content: space-around;
+    }
+    .icon{
+        padding: 2px 5px;
+    }
+    .icon i{
+        font-size: 10px;
+    }
+    .card{
+        width: 150px;
+        padding: 10px;
+    }
+    .card-data i{
+        font-size: 35px;
+    }
+    .card h1{
+        font-size: 20px;
+    }
+    .card h5{
+        font-size: 12px;
+    }
+    .dropdown{
+        width: 80px;
+    }
+    .stats{
+        font-size: 10px;
+    }
+    .table td{
+        font-size: 12px;
+    }
+    .table th{
+        font-size: 15px;
+    }
+    button i{
+        font-size: 5px;
+    }
+
+    .enable{
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        width: calc(100vh - 44px) !important;
+     }
+     .disable{
+        width: 150px !important;
+        display: flex !important;
+        z-index: 99;
+     }
+     .sidebar{
+        display: none;
+     }
+     .main-content{
+        width: 100%;
+     }
+}
+@media(max-width:500px){
+    .logo{
+        width: 100px;
+        padding-left: 10px;
+    }
+    .logo h2{
+        font-size: 15px;
+        
+    }
+    .search{
+        width: 180px;
+        height: 20px;
+        padding: 0px;
+
+    }
+    .search button i{
+        font-size: 10px;
+
+    }
+    .search ::placeholder{
+        font-size: 10px;
+
+    }
+    .search button{
+        height: 20px;
+        padding: 3px;
+    }
+    .search-notification{
+        justify-content: space-between;
+        width: calc(100% - 100px);
+        padding: 0px;
+    }
+    .card{
+        width: 120px;
+        padding: 8px;
+    }
+    .card-data i{
+        font-size: 30px;
+    }
+    .card h1{
+        font-size: 15px;
+    }
+    .card h5{
+        font-size: 10px;
+    }
+    .img-box{
+        width: 40px;
+        height: 40px;
+     }
+     .doctor-card{
+        padding: 5px 5px;
+     }
+}
+@media(max-width:360px){
+    .logo{
+        width: 70px;
+        padding-left: 0px;
+    }
+    .logo h2{
+        font-size: 12px;
+        
+    }
+    .search{
+        width: 200px;
+        height: 20px;
+        padding: 0px;
+    }
+    .search-notification{
+        justify-content: space-around;
+        width: calc(100% - 70px);
+        padding: 0px;
+    }
+    .icon{
+        padding: 0px 2px;
+        margin: 2px;
+    }
+    .icon i{
+        font-size: 8px;
+        margin: 0px;
+    }
+    .overview h2{
+        font-size: 17px;
+    }
+    .doctors h2{
+        font-size: 17px;
+    }
+    .doctors button{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .doctors button i{
+        padding: 1px;
+    }
+    .dropdown {
+        padding: 2px;
+        width: 60px;
+    }
+    .recent-patient h2{
+        font-size: 17px;
+    }
+    .recent-patient button{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .recent-patient button i{
+        padding: 1px;
+    }
+}
