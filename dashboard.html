@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/350478448c.js" crossorigin="anonymous"></script>
+
+    <title>DashBoard</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bars" onclick="minimize()"></i>
+            <h2>Med <span>Ex</span></h2>
+            <p>welcome</p>
+        </div>
+        <div class="search-notification">
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="notification">
+                <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                <div class="icon"><i class="fa-sharp fa-solid fa-comment"></i></div>
+                <div class="icon"><i class="fa-solid fa-bell"></i></div>
+                <div class="icon"><i class="fa-solid fa-user"></i></div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="sidebar">
+            <ul class="sidebar-items">
+                <li>
+                    <a href="#">
+                        <span class="dicon dicon1"><i class="fa-brands fa-dropbox"></i></span>
+                        <span class="content">DashBoard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="dicon dicon2"><i class="fa-solid fa-calendar-days"></i></span>
+                        <span class="content">Schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="dicon dicon3"><i class="fa-solid fa-user-doctor"></i></span>
+                        <span class="content">Reliable Doctor</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="dicon dicon4"><i class="fa-solid fa-hospital-user"></i></span>
+                        <span class="content">Patients</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="dicon dicon5"><i class="fa-regular fa-chart-line"></i></span>
+                        <span class="content">Activity</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="dicon dicon6"><i class="fa-solid fa-headset"></i></span>
+                        <span class="content">Support</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="sidebar-bottom-items">
+                <li>
+                    <a href="#">
+                        <span class="dicon dicon7"><i class="fa-solid fa-gear"></i></span>
+                        <span class="content">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html">
+                        <span class="dicon dicon8"><i class="fa-solid fa-right-from-bracket"></i></span>
+                        <span class="content">Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="overview">
+                <div class="title">
+                    <h2>Overview</h2>
+                    <select name="date" id="date" class="dropdown">
+                        <option value="today">Today</option>
+                        <option value="lastweek">LastWeek</option>
+                        <option value="lastmonth">LastMonth</option>
+                        <option value="lastyear">LastYear</option>
+                        <option value="alltime">AllTime</option>
+                    </select>
+                </div>
+                <div class="cards">
+                    <div class="card card1">
+                        <div class="card-data">
+                            <div class="card-content">
+                                <h5>Total Doctors</h5>
+                                <h1>160</h1>
+                            </div>
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div class="stats">
+                            <span><i class="fa-solid fa-chart-simple"></i>65%</span>
+                            <span><i class="fa-solid fa-caret-up"></i>10</span>
+                            <span><i class="fa-solid fa-caret-down"></i>2</span>
+                        </div>
+
+                    </div>
+
+                    <div class="card card2">
+                        <div class="card-data">
+                            <div class="card-content">
+                                <h5>Total Patient</h5>
+                                <h1>1140</h1>
+                            </div>
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div class="stats">
+                            <span><i class="fa-solid fa-chart-simple"></i>85%</span>
+                            <span><i class="fa-solid fa-caret-up"></i>850</span>
+                            <span><i class="fa-solid fa-caret-down"></i>430</span>
+                        </div>
+
+                    </div>
+
+                    <div class="card card3">
+                        <div class="card-data">
+                            <div class="card-content">
+                                <h5>Schedule</h5>
+                                <h1>102</h1>
+                            </div>
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="stats">
+                            <span><i class="fa-solid fa-chart-simple"></i>27%</span>
+                            <span><i class="fa-solid fa-caret-up"></i>31</span>
+                            <span><i class="fa-solid fa-caret-down"></i>23</span>
+                        </div>
+
+                    </div>
+
+                    <div class="card card4">
+                        <div class="card-data">
+                            <div class="card-content">
+                                <h5>Beds Available</h5>
+                                <h1>15</h1>
+                            </div>
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+                        <div class="stats">
+                            <span><i class="fa-solid fa-chart-simple"></i>8%</span>
+                            <span><i class="fa-solid fa-caret-up"></i>1</span>
+                            <span><i class="fa-solid fa-caret-down"></i>2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="doctors">
+                <div class="title">
+                    <h2>Doctors</h2>
+                    <div class="right-btns">
+                        <select name="date" id="date" class="dropdown doctor-filter">
+                            <option>Filter</option>
+                            <option value="Free">Free</option>
+                            <option value="Scheduled">Scheduled</option>
+                        </select>
+                        <button class="add"><i class="fa-solid fa-plus"></i>Add Doctors</button>
+                    </div>
+                </div>
+            </div>
+            <div class="doctors-cards">
+                <a href="#" class="doctor-card">
+                    <div class="img-box-cover">
+                        <div class="img-box">
+                            <img src="IMAGE/dr1.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="scheduled">Scheduled</p>
+                </a>
+
+
+                <a href="#" class="doctor-card">
+                    <div class="img-box-cover">
+                        <div class="img-box">
+                            <img src="IMAGE/dr3.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="free">Free</p>
+                </a>
+
+
+                <a href="#" class="doctor-card">
+                    <div class="img-box-cover">
+                        <div class="img-box">
+                            <img src="IMAGE/dr4.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="scheduled">Scheduled</p>
+                </a>
+
+
+                <a href="#" class="doctor-card">
+                    <div class="img-box-cover">
+                        <div class="img-box">
+                            <img src="IMAGE/dr5.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="free">Free</p>
+                </a>
+
+                <a href="#" class="doctor-card">
+                    <div class="img-box-cover">
+                        <div class="img-box">
+                            <img src="IMAGE/dr2.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="scheduled">Scheduled</p>
+                </a>
+
+                <a href="#" class="doctor-card">
+                    <div class="img-box-cover">
+                        <div class="img-box">
+                            <img src="IMAGE/dr7.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="scheduled">Scheduled</p>
+                </a>
+
+                <a href="#" class="doctor-card">
+                    <div class="img-box-cover">
+                        <div class="img-box">
+                            <img src="IMAGE/dr8.jpg" alt="">
+                        </div>
+                    </div>
+                    <p class="free">Free</p>
+                </a>
+            </div>
+            <div class="recent-patient">
+                <div class="title">
+                    <h2>Recent Patients</h2>
+                    <button class="add"><i class="fa-solid fa-plus"></i>Add Patients</button>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Date in</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                                <th>Status</th>
+                                <th>Settings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fahad</td>
+                                <td>20/2/2023</td>
+                                <td>Male</td>
+                                <td>24</td>
+                                <td class="pending">Pending</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Hamza</td>
+                                <td>10/2/2023</td>
+                                <td>Male</td>
+                                <td>20</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Raza</td>
+                                <td>15/1/2023</td>
+                                <td>Male</td>
+                                <td>28</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Shazaib</td>
+                                <td>01/01/2023</td>
+                                <td>Male</td>
+                                <td>25</td>
+                                <td class="reject">Rejected</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Muniba</td>
+                                <td>13/12/2022</td>
+                                <td>Female</td>
+                                <td>19</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Farha</td>
+                                <td>20/12/2023</td>
+                                <td>Female</td>
+                                <td>23</td>
+                                <td class="reject">Rejected</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Muniba</td>
+                                <td>13/12/2022</td>
+                                <td>Female</td>
+                                <td>19</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Farha</td>
+                                <td>20/12/2023</td>
+                                <td>Female</td>
+                                <td>23</td>
+                                <td class="reject">Rejected</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Muniba</td>
+                                <td>13/12/2022</td>
+                                <td>Female</td>
+                                <td>19</td>
+                                <td class="confirmed">Confirmed</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Farha</td>
+                                <td>20/12/2023</td>
+                                <td>Female</td>
+                                <td>23</td>
+                                <td class="reject">Rejected</td>
+                                <td><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+
+    <script type="module">
+        let sidebar = document.querySelector(".sidebar")
+        let sideicon = document.querySelectorAll(".dicon")
+        let mainContent = document.querySelector(".main-content")
+        let active = true;
+        function minimize() {
+            if (active) {
+                sidebar.classList.add("disable")
+                mainContent.classList.add("enable")
+                active = false;
+            } else {
+                sidebar.classList.remove("disable")
+                mainContent.classList.remove("enable")
+                active = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
